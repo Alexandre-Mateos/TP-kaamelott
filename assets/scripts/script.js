@@ -3,6 +3,7 @@ let affichage = document.querySelector("#affichage-replique");
 
 
 bouton.addEventListener("click", () => {
+   affichage.innerHTML = "";
 fetch(`https://kaamelott.xyz/api/v1/quote/random`).then((response) => {
     return response.json();
 }).then((data) => {
@@ -26,4 +27,6 @@ function dipslayCard (data){
 
     card.insertAdjacentElement("beforeend", cardBody);
     affichage.insertAdjacentElement("beforeend", card);
+
+    
 }
