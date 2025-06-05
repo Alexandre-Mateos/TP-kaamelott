@@ -18,7 +18,7 @@ function dipslayCard (data){
     let cardBody = document.createElement("div");
 
     let auteur = document.createElement("h5");
-    auteur.innerHTML = data.author;
+    auteur.innerHTML = data.characts;
     cardBody.insertAdjacentElement("beforeend", auteur);
 
     let replique = document.createElement("p");
